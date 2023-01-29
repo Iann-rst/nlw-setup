@@ -12,13 +12,14 @@ O Habits é um aplicativo para ajudar o usuário a rastrear hábitos diários (t
 
 ## :computer: Projeto
 
+  - Back-end:
+  - Front-end:
+  - Mobile: 
 ---
 
 ## 🔖 Projeto
 
-- Back-end:
-- Front-end:
-- Mobile
+Visualizar o layout do projeto através do [LINK](https://www.figma.com/file/LV06lW0RPNPoV39LRoCEc7/nlw-setup%3A-Habits?node-id=6%3A344&t=RX7YxUcVVysUZn97-1). É necessário ter uma conta no [figma](https://www.figma.com/) para acessar o layout do projeto.
 
 ---
 
