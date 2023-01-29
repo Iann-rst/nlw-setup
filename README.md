@@ -8,6 +8,16 @@ O Habits é um aplicativo para ajudar o usuário a rastrear hábitos diários (t
 
 ## :rocket: Tecnologias
 
+  - ReactJS;
+  - React Native;
+  - Node.JS;
+  - Prisma;
+  - Fastify;
+  - Tailwindcss;
+  - NativeWind - Tailwindcss para React Native;
+  - Vite;
+  - JavaScript;
+  - Typescript;
 ---
 
 ## :computer: Projeto
