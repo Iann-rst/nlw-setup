@@ -16,7 +16,6 @@ O Habits é um aplicativo para ajudar o usuário a rastrear hábitos diários (t
   - Tailwindcss;
   - NativeWind - Tailwindcss para React Native;
   - Vite;
-  - JavaScript;
   - Typescript;
 ---
 
