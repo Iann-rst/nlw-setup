@@ -1,5 +1,5 @@
-import { useNavigation } from "@react-navigation/native";
-import { useState, useEffect } from "react";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
+import { useState, useCallback } from "react";
 
 import { api } from "../lib/axios"; '../lib/axios';
 
@@ -49,9 +49,9 @@ export function Home() {
     }
   }
 
-  useEffect(() => {
+  useFocusEffect(useCallback(() => {
     fetchData();
-  }, []);
+  }, []));
 
   if (isLoading) {
     return (<Loading />)
