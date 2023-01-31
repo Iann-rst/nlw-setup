@@ -10,6 +10,7 @@ import { Loading } from "../components/Loading";
 
 import { api } from "../lib/axios";
 import { gerenateProgressPercentage } from '../utils/generate-progress-percentage';
+import { HabitsEmpty } from "../components/HabitsEmpty";
 
 interface Params {
   date: string;
@@ -71,7 +72,6 @@ export function Habit() {
   }
 
   useEffect(() => {
-    console.log("AQUI")
     fetchHabits();
   }, [])
 
@@ -102,16 +102,16 @@ export function Habit() {
 
         <View className="mt-6">
           {
-            dayInfo?.possibleHabits &&
-            dayInfo.possibleHabits.map(habit => (
-              <Checkbox
-                key={habit.id}
-                title={habit.title}
-                checked={completedHabits.includes(habit.id)}
-                onPress={() => handleToggleHabits(habit.id)}
-              />
-            ))
-
+            dayInfo!.possibleHabits.length > 0 ?
+              dayInfo?.possibleHabits.map(habit => (
+                <Checkbox
+                  key={habit.id}
+                  title={habit.title}
+                  checked={completedHabits.includes(habit.id)}
+                  onPress={() => handleToggleHabits(habit.id)}
+                />
+              ))
+              : <HabitsEmpty />
           }
         </View>
       </ScrollView>
